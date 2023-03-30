@@ -7,11 +7,10 @@
 
 在线预览:
 
-1. [chatsverse.xyz](https://www.chatsverse.xyz)，由 [@Airyland](https://m.okjike.com/users/C6C8DE3A-E89D-4978-9E7D-B2E167D835A9) 免费提供。
-2. ~~[aitoolgpt.com](https://www.aitoolgpt.com)，由 [@AUDI_GUZZ](https://m.okjike.com/users/4af3cfb4-1291-4a8b-b210-f515c86934a9) 免费提供~~。（2022.03.22 壮烈牺牲，提醒大家不要过度分享自己的站点出去，指不定 ChatGPT 说出什么违禁词出来）。
-3. [vercel.app](https://vercel-chatgpt-github.vercel.app) 被墙。
+1. [测试demo](https://demo.tomda.top/)，免费提供~~。（2022.03.30 壮烈牺牲，提醒大家不要过度分享自己的站点出去，指不定 ChatGPT 说出什么违禁词出来）。
 
-API Key 由我自己免费提供，请不要滥用，不提供长期服务，请自行部署。默认 key 不支持 `gpt-4`。演示站点密码为 `ourongxing`，每次刷新会关闭 `连续对话`。
+
+API Key 自己提供，请不要滥用，不提供长期服务，请自行部署。默认 key 不支持 `gpt-4`。演示站点密码为 `ourongxing`，每次刷新会关闭 `连续对话`。
 
 ## 使用方法
 
@@ -24,7 +23,7 @@ API Key 由我自己免费提供，请不要滥用，不提供长期服务，请
   - 开启连续对话：OpenAI 并没有提供 ChatGPT 那样的上下文功能，只能每次都把全部对话传过去，并且都要算 token，而且仍然有最大 4096 token 的限制。
   - OpenAI 模型：需要注意的是, 只有获得了 GPT4 API 内测资格的用户才可以使用您的 API KEY 调用 GPT4。不同的模型对应的 token 最大值不同，比如 `gpt-3.5-turbo` 的最大 token 为 4k(4096)，`gpt-4` 的最大 token 为 8k(8192)，`gpt-4-32k`  的最大 token 为 32k(32768)。不同模型的价格也不同，具体可以查看 [OpenAI 价格](https://openai.com/pricing/)。
 - token 是怎么算的：OpenAI 有它自己的算法，大多数时候是一个单词 1 token，一个汉字 2 token。
-- Open AI Key 要怎么获得：注册 OpenAI 的帐号，然后 [生成 Key](https://platform.openai.com/account/api-keys) 就行了。现在注册就送 5 美元，可以用一两个月。嫌注册麻烦，可以直接去买号，自行搜索。注意不要被骗，一般 5 元以下可以入手，看到有 120 美元的 key，这种属于是绑了虚拟信用卡，可以透支 120 美元，只能用一个月，而且容易封号。
+- Open AI Key 要怎么获得：注册 OpenAI 的帐号，然后 [生成 Key](https://platform.openai.com/account/api-keys) 就行了。现在注册就送 5 美元，可以用一两个月。嫌注册麻烦，可以直接去买号，
 - 输入框右边的四个按钮：
   - 对话生成图片，电脑上是复制到剪贴板，手机上是直接下载。
   - 对话生成 Markdown，复制到剪贴板。
@@ -63,10 +62,6 @@ API Key 由我自己免费提供，请不要滥用，不提供长期服务，请
 
 #### 更多部署方案
 
-目前本项目除 Vercel 以外还支持
-
-- [Netlify](https://www.netlify.com/)
-- [Railway](https://railway.app/)
 
 直接导入即可，但是不建议使用除 Vercel 以外的部署方案。 除了比较慢以外，更重要的是只有 Vercel 支持设置 Edge Function 服务器的地区，其他平台会自动使用距离最近的服务器，有可能是 OpenAI 不支持的地区，从而导致封号。
 
@@ -120,11 +115,11 @@ API Key 由我自己免费提供，请不要滥用，不提供长期服务，请
 - 尽可能去优化已有的 Prompts，而不是重复添加。
 - 添加到结尾，我会定期整理。
 
-## 赞赏
+## 关注公众号学习更多
 
-如果本项目对你有所帮助，可以给小猫买点零食，但不接受任何付费功能请求。
+如果本项目对你有所帮助，可以关注公众号
 
-![](./assets/reward.gif)
+![](./assets/tomda.png)
 
 ## License
 
