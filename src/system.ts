@@ -11,7 +11,7 @@ export const defaultSetting = {
 }
 
 export const defaultMessage = `Powered by OpenAI Vercel
-<img src="https://github.com/Tomccc520/chatgpt-tomda/raw/main/assets/tomda.png" alt="关注公众号" width="500" height="300" title="This is an example image" class="image-style" style="border: 1px solid black;">
+<img src="https://github.com/Tomccc520/chatgpt-tomda/raw/main/assets/tomda.png" alt="关注公众号" 
 - [[Shift]] + [[Enter]] 换行。开头输入 [[/]] 或者 [[空格]] 搜索 Prompt 预设。[[↑]] 可编辑最近一次提问。点击顶部名称滚动到顶部，点击输入框滚动到底部。`
 
 export type Setting = typeof defaultSetting
